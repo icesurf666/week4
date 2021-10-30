@@ -18,7 +18,7 @@ const server = http.createServer(async (req, res) => {
     })
     res.write(JSON.stringify({
       "message": "itmo307697",
-      "x-result": headers,
+      "x-result": req.headers["x-test"],
       "x-body": data
     }
     ))
